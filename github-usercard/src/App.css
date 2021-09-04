@@ -1,0 +1,12 @@
+li {
+    list-style-type: none;
+}
+
+li>h2>a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li>h2>a :hover {
+    cursor: pointer;
+}
