@@ -7,22 +7,30 @@ import axios from 'axios';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { users: [] }
+    this.state = { 
+      myLogin: 'bus42',
+      users: [] }
   }
 
   componentDidMount(){
     console.log('App: CDM')
-    axios.get(`${BASE_URL}/bus42`)
+    setTimeout(() => {
+      axios.get(`${BASE_URL}/${this.state.myLogin}`)
     .then(res => {
-      console.log(res.data)
       this.setState({users: [res.data]})
     })
-    .catch(err => console.error(err))    
+    .catch(err => console.error(err))
+    }, 1500)    
+  }
+
+  addFollowers = (followers) => {
+    const newState = {users: [...this.state.users, ...followers]}
+    console.log(newState)
   }
 
   render() { 
     return ( <div id="app">
-      {this.state.users.length === 0 ? <div>...loading</div> : <Users users={this.state.users} /> }
+      {this.state.users.length === 0 ? <div>...loading</div> : <Users users={this.state.users} addFollowers={this.addFollowers} /> }
     </div> );
   }
 }
