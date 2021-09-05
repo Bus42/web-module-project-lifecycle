@@ -13,7 +13,8 @@ class Usercard extends Component {
     }
 
     render() { 
-        return ( <ImageListItem >
+        return ( 
+        <ImageListItem >
             <img src={this.props.user.avatar_url} alt={`${this.props.user.login} avatar`} />
             <ImageListItemBar
                 title={this.props.user.login}
