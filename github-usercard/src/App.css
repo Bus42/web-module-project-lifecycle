@@ -22,3 +22,11 @@ li + li {
  img {
      border-radius: 12px;
  }
+
+ form {
+     color: whitesmoke;
+     border: 1px solid green;
+     position: absolute;
+     top: 1rem;
+     left: 1rem;
+ }
