@@ -2,3 +2,7 @@ body {
     background-color: black;
     color: whitesmoke;
 }
+
+li + li {
+    margin-top: 4rem;
+}
