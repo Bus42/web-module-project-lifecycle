@@ -24,7 +24,7 @@ class SearchForm extends Component {
         <Input
           variant="outlined"
           style={{ color: "whitesmoke", borderColor: "whitesmoke" }}
-          color="whitesmoke"
+          color="primary"
           type="text"
           placeholder="enter user name"
           value={this.state.formValue}

@@ -30,3 +30,11 @@ li + li {
      top: 1rem;
      left: 1rem;
  }
+
+ article.react-activity-calendar {
+     width: 460px !important;
+     position: absolute;
+     top: 0px;
+     background-color: #333;
+     opacity: 0.7;
+ }

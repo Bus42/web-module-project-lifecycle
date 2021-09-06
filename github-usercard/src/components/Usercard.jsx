@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ImageListItemBar from "@material-ui/core/ImageListItemBar";
 import ImageListItem from "@material-ui/core/ImageListItem";
+import GitHubCalendar from "react-github-calendar";
 
 class Usercard extends Component {
   componentDidMount() {
@@ -19,6 +20,11 @@ class Usercard extends Component {
         <a href={html_url} target={login}>
           <ImageListItemBar title={login} subtitle={name} />
         </a>
+        <GitHubCalendar
+        username={login}
+        hideColorLegend
+        hideTotalCount
+        />
       </ImageListItem>
     );
   }
