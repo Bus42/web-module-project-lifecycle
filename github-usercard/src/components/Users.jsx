@@ -12,7 +12,6 @@ class Users extends Component {
         <ImageList>
           <ImageListItem>
             <ListSubheader
-              style={{ color: "whitesmoke", fontSize: "24px" }}
               component="h1"
             >
               Github Users
