@@ -11,7 +11,7 @@ class Users extends Component {
       <div id="users_component">
         <ImageList>
           <ImageListItem>
-            <ListSubheader component="div">Github Users</ListSubheader>
+            <ListSubheader style={{color: 'whitesmoke', fontSize: '24px'}} component="h1">Github Users</ListSubheader>
           </ImageListItem>
           {this.props.users.map((user, index) => (
             <Usercard user={user} key={index} />
